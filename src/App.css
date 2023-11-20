@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  width: 30rem;
+  padding: 4rem;
+}
+
+.age {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background-color: rgb(214, 150, 214);
+  padding: 2rem 0;
+  border-radius: 8px;
+}
+
+.age input {
+  border-radius: 8px;
+  padding: 0.6em 3em 0.6rem 0.6rem;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+}
+
+.display {
+  text-align: center;
+  padding: 2rem 0;
+  display: grid;
+  width: 30rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.display p {
+  border-radius: 8px;
+  width: max-content;
+  font-size: 2rem;
+  font-weight: 1000;
+
+  display: inline;
+  padding: 1rem 2rem;
+  background-color: rgb(214, 150, 214);
+}
+
+.display span {
+  padding-top: 1rem;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .display {
+    grid-template-columns: 1fr;
+  }
+
+  .display span {
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
